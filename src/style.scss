@@ -1,0 +1,65 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wp-block-brasco-reviews {
+  color: #6a6a6a;
+  padding: 8px;
+  background-color: #e8e8e8;
+  height: 240px;
+
+  p {
+	margin: 8px 0;
+  }
+
+  .brasco-reviews-customer {
+	display: inline-flex;
+	align-items: center;
+
+	figure {
+	  margin: 0;
+	}
+
+	img {
+	  max-height: 50px;
+	  max-width: 50px;
+	  border-radius: 50%;
+	  object-fit: cover;
+	  &[src] {
+		margin-right: 8px;
+	  }
+	}
+
+	h6 {
+	  color: #959595;
+	  font-size: 1.25rem;
+	  margin: 8px 0;
+	  font-weight: bold;
+	}
+  }
+
+  .brasco-reviews-starts {
+	align-items: center;
+	margin: 8px 0;
+
+	& > svg {
+	  display: inline-block;
+	  margin-right: 8px;
+	}
+  }
+}
+
+@media (min-width: 600px) {
+  .wp-block-brasco-reviews {
+	padding: 20px;
+
+	.brasco-reviews-starts {
+	  & > svg {
+		margin-right: 16px;
+	  }
+	}
+  }
+}
